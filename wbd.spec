@@ -10,7 +10,7 @@ Patch0:		%{name}-makefile.patch
 Patch1:		%{name}-sys_time_h.patch
 Patch2:		%{name}-htonl_arg.patch
 URL:		http://www-mice.cs.ucl.ac.uk/multimedia/software/wbd/
-License:	Custom
+License:	custom
 BuildRequires:	ucl-common-devel
 BuildRequires:	tcl-devel >= 8.3
 BuildRequires:	tk-devel >= 8.3

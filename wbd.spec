@@ -4,8 +4,6 @@ Name:		wbd
 Version:	1.0ucl3
 Release:	1
 Group:		X11/Applications/Multimedia
-Group(de):	X11/Applikationen/Multimedia
-Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://www-mice.cs.ucl.ac.uk/multimedia/software/%{name}/%{version}/%{name}-%{version}.tar.gz
 Source1:	%{name}-COPYRIGHT
 Patch0:		%{name}-makefile.patch

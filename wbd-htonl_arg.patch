@@ -1,0 +1,18 @@
+diff -durN wbd.orig/comms.c wbd/comms.c
+--- wbd.orig/comms.c	Fri Jun 15 12:03:53 2001
++++ wbd/comms.c	Fri Jun 15 12:05:05 2001
+@@ -2248,10 +2248,10 @@
+         y1 = (real32)strtol  (argv[4], NULL, 0);
+         CanvasToPageXY (&x1, &y1);
+         copy->cmd_id    = htonl(strtoul (6+argv[2], NULL, 0)); /* long  */
+-        copy->d1        = htonl(1.0);
+-        copy->d2        = htonl(0.0);
+-        copy->d3        = htonl(0.0);
+-        copy->d4        = htonl(1.0);
++        copy->d1        = htonl(1);
++        copy->d2        = htonl(0);
++        copy->d3        = htonl(0);
++        copy->d4        = htonl(1);
+         copy->to_x      = htonf(x1); /* float */
+         copy->to_y      = htonf(y1); /* float */
+     }

@@ -1,0 +1,11 @@
+diff -durN wbd.orig/comms.c wbd/comms.c
+--- wbd.orig/comms.c	Fri Oct  2 13:21:16 1998
++++ wbd/comms.c	Fri Jun 15 11:55:31 2001
+@@ -48,6 +48,7 @@
+ #define _BSD_TIME
+ #endif
+ #ifndef WIN32
++#include <sys/time.h>
+ #include <sys/types.h>
+ #include <sys/socket.h>
+ #include <netinet/in.h>

@@ -5,6 +5,7 @@ Version:	1.0ucl3
 Release:	1
 Group:		X11/Applications/Multimedia
 Source0:	http://www-mice.cs.ucl.ac.uk/multimedia/software/%{name}/%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	019d97da5d36013386dcd008a43d886f
 Source1:	%{name}-COPYRIGHT
 Patch0:		%{name}-makefile.patch
 Patch1:		%{name}-sys_time_h.patch

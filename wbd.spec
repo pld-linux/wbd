@@ -39,8 +39,6 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 install wbd $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE1} COPYRIGHT
 
-gzip -9nf CHANGES COPYRIGHT
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 

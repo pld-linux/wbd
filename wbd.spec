@@ -3,6 +3,7 @@ Summary(pl):	Sieciowa tablica rysunkowa
 Name:		wbd
 Version:	1.0ucl3
 Release:	1
+License:	custom
 Group:		X11/Applications/Multimedia
 Source0:	http://www-mice.cs.ucl.ac.uk/multimedia/software/%{name}/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	019d97da5d36013386dcd008a43d886f
@@ -11,12 +12,12 @@ Patch0:		%{name}-makefile.patch
 Patch1:		%{name}-sys_time_h.patch
 Patch2:		%{name}-htonl_arg.patch
 URL:		http://www-mice.cs.ucl.ac.uk/multimedia/software/wbd/
-License:	custom
-BuildRequires:	ucl-common-devel
 BuildRequires:	tcl-devel >= 8.3
 BuildRequires:	tk-devel >= 8.3
+BuildRequires:	ucl-common-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		debugcflags	-O1 -g
 
 %description
 WBD is a shared whiteboard, compatible with LBL whiteboard WB.
@@ -31,11 +32,13 @@ WBD to sieciowa tablica rysunkowa, kompatybilna z tablic± LBL --- WB.
 %patch2 -p1
 
 %build
-%{__make} OPTFLAGS="%{!?debug:%{rpmcflags}} %{?debug:-O1 -g}"
+%{__make} \
+	OPTFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install wbd $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE1} COPYRIGHT
 

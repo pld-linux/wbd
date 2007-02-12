@@ -1,5 +1,5 @@
 Summary:	Shared Whiteboard
-Summary(pl.UTF-8):   Sieciowa tablica rysunkowa
+Summary(pl.UTF-8):	Sieciowa tablica rysunkowa
 Name:		wbd
 Version:	1.0ucl3
 Release:	1

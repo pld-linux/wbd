@@ -1,5 +1,5 @@
 Summary:	Shared Whiteboard
-Summary(pl):	Sieciowa tablica rysunkowa
+Summary(pl.UTF-8):   Sieciowa tablica rysunkowa
 Name:		wbd
 Version:	1.0ucl3
 Release:	1
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 WBD is a shared whiteboard, compatible with LBL whiteboard WB.
 
-%description -l pl
-WBD to sieciowa tablica rysunkowa, kompatybilna z tablic± LBL --- WB.
+%description -l pl.UTF-8
+WBD to sieciowa tablica rysunkowa, kompatybilna z tablicÄ… LBL --- WB.
 
 %prep
 %setup -qn %{name}

@@ -27,9 +27,9 @@ WBD to sieciowa tablica rysunkowa, kompatybilna z tablicą LBL --- WB.
 
 %prep
 %setup -qn %{name}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 
 %build
 %{__make} \
